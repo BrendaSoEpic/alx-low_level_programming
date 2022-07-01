@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print all letters in lowercase except e and q
- * followed by a new line
+ * main - print all letters in lowercase,
+ * followed by a new line, except q and e
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char ch = 'a';
@@ -16,6 +15,8 @@ int main(void)
 		{
 			putchar(ch);
 		}
-		putchar('\n');
-		return (0);
+		ch++;
 	}
+	putchar('\n');
+	return (0);
+}
