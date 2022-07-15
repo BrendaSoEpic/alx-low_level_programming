@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes a pointer to a parameter and updates its
- * values.
- * @n: Input Integer
- * Return: no return.
+ * _putchar - writes the character c to stdout
+ * @c: the character to print.
+ * Return: On success 1.
+ * On error, -1 is returned and errno is set approriately.
  */
-void reset_to_98(int *n)
+int _putchar(char c)
 {
-	*n = 98;
+	return (write(1, &c, 1));
 }
